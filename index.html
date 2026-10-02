@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call of War</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div class="left-panel">
+        <div id="mission-label">Mission 1</div>
+        <div id="mission-name">Dawn at Anzac Cove</div>
+      </div>
+      <div class="center-panel">
+        <div id="status">Hold the line</div>
+      </div>
+      <div class="right-panel">
+        <div id="health">Health: 100</div>
+        <div id="ammo">Ammo: 12</div>
+      </div>
+    </div>
+
+    <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+    <div id="crosshair"></div>
+
+    <div id="overlay" class="visible">
+      <div class="panel">
+        <h1>Call of War</h1>
+        <p>Campaign Prototype</p>
+        <p class="small">WW1 Gallipoli FPS • Browser demo</p>
+        <button id="startButton">Start Campaign</button>
+      </div>
+    </div>
+
+    <div id="missionOverlay" class="hidden">
+      <div class="panel">
+        <h2 id="missionTitle">Mission 1</h2>
+        <p id="missionText">The landing is under fire.</p>
+        <button id="nextMissionButton">Continue</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
